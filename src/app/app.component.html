@@ -1,0 +1,79 @@
+<div class="santa">
+  <div class="circles"></div>
+  <div class="snow"></div>
+  <div class="hat">
+    <div class="hat-end"></div>
+  </div>
+  <div class="face">
+    <div class="eyes"></div>
+    <div class="mouth"></div>
+  </div>
+  <div class="dirty-overflow">
+    <div class="body"></div>
+  </div>
+</div>
+
+<div class="container">
+  <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col-12"></div>
+    </div>
+    <div *ngIf="!loading && !success">
+      <div class="row">
+        <div class="col-sm"></div>
+        <div class="col-sm">
+          <span>E-mail Adresse eintragen</span>
+          <input
+            style="width: 100%"
+            formControlName="email"
+            [ngClass]="profileForm.valid ? '' : 'invalid'"
+          />
+        </div>
+        <div class="col-sm"></div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <button type="submit" [disabled]="!profileForm.valid">
+            Wichteln
+          </button>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="loading">
+      <div class="row">
+        <div class="col-12">
+          <div class="fa-3x">
+            <i class="fas fa-stroopwafel fa-spin"></i><br />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <span>wird geladen ...</span>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="success">
+      <div class="row">
+        <div class="col-12">
+          <div class="alert alert-success" role="alert">
+            Gratuliere, du hast gezogen. Check deine Mailbox.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="error">
+      <div class="row">
+        <div class="col-12">
+          <div class="alert alert-danger" role="alert">Hoppla! {{ error }}</div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<footer class="footer">
+  <div class="footer-copyright text-center py-3">
+    © 2020 <a href="https://xpera.ch">xpera.ch</a> - a bug free company
+  </div>
+</footer>

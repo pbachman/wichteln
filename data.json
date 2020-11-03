@@ -1,0 +1,26 @@
+[
+  {
+    "name": "katharina_bachmann@hotmail.com",
+    "partner": "philipp_bachmann@hotmail.com"
+  },
+  {
+    "name": "philipp_bachmann@hotmail.com",
+    "partner": "katharina_bachmann@hotmail.com"
+  },
+  {
+    "name": "engelchen_88@msn.com",
+    "partner": "tobi@scheuber.ch"
+  },
+  {
+    "name": "tobi@scheuber.ch",
+    "partner": "engelchen_88@msn.com"
+  },
+  {
+    "name": "alev0213@gmail.com",
+    "partner": "matti@scheuber.ch"
+  },
+  {
+    "name": "matti@scheuber.ch",
+    "partner": "alev0213@gmail.com"
+  }
+]
