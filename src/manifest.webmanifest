@@ -1,11 +1,12 @@
 {
   "name": "scheuberei wichteln",
   "short_name": "wichtel",
-  "theme_color": "#1976d2",
+  "theme_color": "#d21919",
   "background_color": "#fafafa",
   "display": "fullscreen",
   "scope": "./",
   "start_url": "https://scheuberei.herokuapp.com",
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
