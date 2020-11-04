@@ -225,10 +225,27 @@
   dependencies:
     tslib "^2.0.0"
 
+"@angular/pwa@^0.1002.0":
+  version "0.1002.0"
+  resolved "https://registry.yarnpkg.com/@angular/pwa/-/pwa-0.1002.0.tgz#2bf07f4abdd0b561995ebf2a78891bc4fd008fd1"
+  integrity sha512-E3yHTD+KM5efhjQTWfCASiQ7rYngUviMGLq6mbo7gk3mIrzbvJFzJe9c5Qk4XmaZf6F5iDBJChjVnec7Bil9Qg==
+  dependencies:
+    "@angular-devkit/core" "10.2.0"
+    "@angular-devkit/schematics" "10.2.0"
+    "@schematics/angular" "10.2.0"
+    parse5-html-rewriting-stream "6.0.1"
+
 "@angular/router@~10.2.0":
   version "10.2.1"
   resolved "https://registry.yarnpkg.com/@angular/router/-/router-10.2.1.tgz#c3204c2a20aac871c415118908179431319dac91"
   integrity sha512-w2iS/gq4dcPd4cPGgd7HGEANg5BfE+fg0cI81ah7e79OatDP+Y1atxmNXyF50gCxl8x6WDnUiNu8nfjTebgRAw==
+  dependencies:
+    tslib "^2.0.0"
+
+"@angular/service-worker@~10.2.0":
+  version "10.2.1"
+  resolved "https://registry.yarnpkg.com/@angular/service-worker/-/service-worker-10.2.1.tgz#7e59a59f0286537ee279c1b697b7bff33d46e9ad"
+  integrity sha512-nhcqLjMQoOLy4Ctiwa/K/p9iXQIbSUyMwpfsD/zZvdzny/lOW0x1IbhAJdbkRNdHXEznayx8rznmscttO9gyRA==
   dependencies:
     tslib "^2.0.0"
 
@@ -2708,14 +2725,6 @@ core-util-is@1.0.2, core-util-is@~1.0.0:
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
   integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
 
-cors@^2.8.1:
-  version "2.8.5"
-  resolved "https://registry.yarnpkg.com/cors/-/cors-2.8.5.tgz#eac11da51592dd86b9f06f6e7ac293b3df875d29"
-  integrity sha512-KIHbLJqu73RGr/hnbrO9uBeixNGuvSQjul/jdFvS/KFSIH1hWVd1ng7zOHx+YrEfInLG7q4n6GHQ9cDtxv/P6g==
-  dependencies:
-    object-assign "^4"
-    vary "^1"
-
 cosmiconfig@^5.0.0:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-5.2.1.tgz#040f726809c591e77a17c0a3626ca45b4f168b1a"
@@ -3294,11 +3303,6 @@ dot-prop@^5.2.0:
   integrity sha512-QM8q3zDe58hqUqjraQOmzZ1LIH9SWQJTlEKCH4kJ2oQvLZk7RbQXvtDM2XEq3fwkV9CCvvH4LA0AV+ogFsBM2Q==
   dependencies:
     is-obj "^2.0.0"
-
-dotenv@^8.2.0:
-  version "8.2.0"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
-  integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
 
 duplexify@^3.4.2, duplexify@^3.6.0:
   version "3.7.1"
@@ -6064,7 +6068,7 @@ oauth-sign@~0.9.0:
   resolved "https://registry.yarnpkg.com/oauth-sign/-/oauth-sign-0.9.0.tgz#47a7b016baa68b5fa0ecf3dee08a85c679ac6455"
   integrity sha512-fexhUFFPTGV8ybAtSIGbV6gOkSv8UtRbDBnAyLQw4QPKkgNlsH2ByPGtMUqdWkos6YCRmAqViwgZrJc/mRDzZQ==
 
-object-assign@^4, object-assign@^4.0.1, object-assign@^4.1.0, object-assign@^4.1.1:
+object-assign@^4.0.1, object-assign@^4.1.0, object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
   integrity sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
@@ -6359,10 +6363,25 @@ parse-json@^4.0.0:
     error-ex "^1.3.1"
     json-parse-better-errors "^1.0.1"
 
+parse5-html-rewriting-stream@6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/parse5-html-rewriting-stream/-/parse5-html-rewriting-stream-6.0.1.tgz#de1820559317ab4e451ea72dba05fddfd914480b"
+  integrity sha512-vwLQzynJVEfUlURxgnf51yAJDQTtVpNyGD8tKi2Za7m+akukNHxCcUQMAa/mUGLhCeicFdpy7Tlvj8ZNKadprg==
+  dependencies:
+    parse5 "^6.0.1"
+    parse5-sax-parser "^6.0.1"
+
 parse5-htmlparser2-tree-adapter@6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/parse5-htmlparser2-tree-adapter/-/parse5-htmlparser2-tree-adapter-6.0.1.tgz#2cdf9ad823321140370d4dbf5d3e92c7c8ddc6e6"
   integrity sha512-qPuWvbLgvDGilKc5BoicRovlT4MtYT6JfJyBOMDsKoiT+GiuP5qyrPCnR9HcPECIJJmZh5jRndyNThnhhb/vlA==
+  dependencies:
+    parse5 "^6.0.1"
+
+parse5-sax-parser@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/parse5-sax-parser/-/parse5-sax-parser-6.0.1.tgz#98b4d366b5b266a7cd90b4b58906667af882daba"
+  integrity sha512-kXX+5S81lgESA0LsDuGjAlBybImAChYRMT+/uKCEXFBFOeEhS52qUCydGhU3qLRD8D9DVjaUo821WK7DM4iCeg==
   dependencies:
     parse5 "^6.0.1"
 
@@ -8773,7 +8792,7 @@ validate-npm-package-name@^3.0.0:
   dependencies:
     builtins "^1.0.3"
 
-vary@^1, vary@~1.1.2:
+vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
