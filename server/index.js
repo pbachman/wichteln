@@ -11,17 +11,9 @@ const server = (function () {
   const express = require('express');
   const app = express();
   const bodyParser = require('body-parser');
-  const cors = require('cors');
   const router = require('./server.route');
   const helmet = require('helmet');
-  const compression = require('compression')
-  const dotenv = require('dotenv');
-
-  dotenv.config();
-  const result = dotenv.config();
-  if (result.error) {
-    console.warn('no .env file found!');
-  }
+  const compression = require('compression');
 
   /** Use Body Parser */
   app.use(bodyParser.urlencoded({ extended: false }))
@@ -30,7 +22,7 @@ const server = (function () {
   /** Cross origin configuration */
   app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', process.env.CORSALLOWORIGIN);
-    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST');
     res.header('Access-Control-Allow-Headers', 'Authorization, Origin, X-Requested-With, Content-Type, Accept');
     next();
   });
