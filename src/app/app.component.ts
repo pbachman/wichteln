@@ -20,6 +20,8 @@ export class AppComponent {
 
   onSubmit(): void {
     this.loading = true;
+    this.error = null;
+    this.success = false;
 
     setTimeout(() => {
       this.service.draw(this.profileForm.value).subscribe(
