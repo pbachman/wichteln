@@ -27,15 +27,15 @@ let serverRoutes = function () {
 
       if (found) {
         sendMailer.sendMail(
-          "hi@phil.ch",
+          found.name,
           "Scheuberei Wichtel 2020",
-          `<b>Hohoho ${found.name}!</b> Du hast ${found.draw} gezogen.`
+          `<b>Ho-Ho-Ho ${found.name}!</b> Du hast ${found.draw} gezogen.`
         );
         res.send(JSON.stringify('Draw successfully.'));
       } else {
         res
           .status(400)
-          .send("Du hast keine gültige E-mail Adresse eingegeben!");
+          .send("Es konnte niemand mit dieser E-mail Adresse gefunden werden!");
       }
     } else {
       res.status(400).send("Required fields missing!");
