@@ -22,7 +22,7 @@ let serverRoutes = function () {
       let data = JSON.parse(rawdata);
 
       const found = data.find(function (element) {
-        return element.name === req.body.email.email;
+        return element.name === req.body.email.email.toLowerCase();
       });
 
       if (found) {
