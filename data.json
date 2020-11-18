@@ -1,26 +1,26 @@
 [
   {
-    "name": "katharina_bachmann@hotmail.com",
-    "partner": "philipp_bachmann@hotmail.com"
+    "name": "user1@user1.ch",
+    "partner": "user2@user2.ch"
   },
   {
-    "name": "philipp_bachmann@hotmail.com",
-    "partner": "katharina_bachmann@hotmail.com"
+    "name": "user2@user2.ch",
+    "partner": "user1@user1.ch"
   },
   {
-    "name": "engelchen_88@msn.com",
-    "partner": "scheuber17@hotmail.com"
+    "name": "user3@user3.ch",
+    "partner": "user4@user4.ch"
   },
   {
-    "name": "scheuber17@hotmail.com",
-    "partner": "engelchen_88@msn.com"
+    "name": "user4@user4.ch",
+    "partner": "user3@user3.ch"
   },
   {
-    "name": "alev0213@gmail.com",
-    "partner": "matthias.scheuber@gmx.ch"
+    "name": "user5@user5.ch",
+    "partner": "user6@user6.ch"
   },
   {
-    "name": "matthias.scheuber@gmx.ch",
-    "partner": "alev0213@gmail.com"
+    "name": "user6@user6.ch",
+    "partner": "user5@user5.ch"
   }
 ]
