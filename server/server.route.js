@@ -28,7 +28,7 @@ let serverRoutes = function () {
       if (found) {
         sendMailer.sendMail(
           found.name,
-          "Scheuberei Wichtel 2020",
+          "Scheuberei Wichtel 2021",
           `<b>Ho-Ho-Ho ${found.name}!</b> Du hast ${found.draw} gezogen.`
         );
         res.send(JSON.stringify('Draw successfully.'));
