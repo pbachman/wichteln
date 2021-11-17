@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  BASE_URI: 'https://scheuberei.herokuapp.com/'
+  BASE_URI: 'https://your.domain/'
 };
