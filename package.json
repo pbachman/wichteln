@@ -18,7 +18,7 @@
     "@angular/forms": "~13.3.12",
     "@angular/platform-browser": "~13.3.12",
     "@angular/platform-browser-dynamic": "~13.3.12",
-    "@angular/pwa": "~13.3.12",
+    "@angular/pwa": "13.3.10",
     "@angular/router": "~13.3.12",
     "@angular/service-worker": "~13.3.12",
     "@fortawesome/fontawesome-free": "^5.15.1",

@@ -221,7 +221,7 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/pwa@~13.3.12":
+"@angular/pwa@13.3.10":
   version "13.3.10"
   resolved "https://registry.yarnpkg.com/@angular/pwa/-/pwa-13.3.10.tgz#9f8501cde5e1a42b7123dc1b69a4d804f074b5ae"
   integrity sha512-Qfhaxw08A0dGlTYkS7Hi6nwaXDuESJc+hZBIo9F8URBDSzhJIFXUabdWifFRvjjAI6q3OZVo2aklC3UxMIZ1kg==
