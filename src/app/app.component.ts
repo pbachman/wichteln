@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormControl, UntypedFormGroup, Validators } from '@angular/forms';
 import { BackendService } from './service.service';
 
 @Component({
@@ -11,8 +11,8 @@ export class AppComponent {
   loading = false;
   success = false;
   error = '';
-  profileForm = new FormGroup({
-    email: new FormControl('', [Validators.email, Validators.required]),
+  profileForm = new UntypedFormGroup({
+    email: new UntypedFormControl('', [Validators.email, Validators.required]),
   });
 
   constructor(private service: BackendService) {
